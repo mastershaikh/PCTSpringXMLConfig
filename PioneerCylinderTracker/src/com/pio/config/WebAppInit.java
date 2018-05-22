@@ -14,18 +14,12 @@ public class WebAppInit implements WebApplicationInitializer{
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
-
-		/*AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-		context.scan(AppConfiguration.class.getPackage().getName());
-		servletContext.addListener(new ContextLoaderListener(context));*/
 		
 		XmlWebApplicationContext context = new XmlWebApplicationContext();
 		context.setConfigLocation("/WEB-INF/spring-config.xml");
 		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(context));
 		dispatcher.setLoadOnStartup(1);
-		Set<String> mappings = dispatcher.addMapping("/");
-		if(!mappings.isEmpty()) {
-			throw new IllegalStateException("conflicting mappings found!"+mappings);
+		dispatcher.addMapping("/");
 		}
 	}
 
