@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:pioneer</property>
+		<property name="hibernate.connection.username">nizam</property>
+		<property name="hibernate.connection.password">Pioneer123</property>
+		<property name="dialect">org.hibernate.dialect.OracleDialect</property>
+		<property name="hibernate.search.autoregister_listeners">false</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.jdbc.batch_size">120</property> 
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		
+		<mapping class="com.pio.model.OutstandingBean"/>
+		<mapping class="com.pio.model.Cylinder"/>
+		<mapping class="com.pio.model.DealerDetails"/>
+		<mapping class="com.pio.model.CylinderTransactions"/>
+		<mapping class="com.pio.model.GenerateInvoiceBean"/>
+		<mapping class="com.pio.model.GenerateECRBean"/>
+		<mapping class="com.pio.model.ECRTransactionBean"/>
+		<mapping class="com.pio.model.CylinderTest"/>
+		<mapping class="com.pio.model.DealerCylinderTxn"/>
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	
+	<definition name="AdminLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/jsp/AdminMenu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	
+	<definition name="Index" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Index.jsp" />
+	</definition>
+	
+	<definition name="Index" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Index.jsp" />
+	</definition>
+	
+	<!-- To navigate to "AdminHome" -->
+	<definition name="AdminHome" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/AdminHome.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+	</definition>
+
+	<definition name="GetDealer" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/GetDealer.jsp" />
+	</definition>
+	<definition name="DealerDetails" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerDetails.jsp" />
+		</definition>
+	
+		<definition name="DealerRegister" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerRegister.jsp" />
+	</definition>
+		<!-- To navigate to "CustomerPassword" -->
+	<definition name="CustomerPassword" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Password.jsp" />
+	</definition>
+	<!-- To navigate to "AdminPassword" -->
+	<definition name="AdminPassword" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Password.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/Header.jsp" />
+	</definition>
+	
+	<!-- To navigate to "DealerHome" -->
+	<definition name="DealerHome" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerHome.jsp" />
+	</definition>
+	<!-- To navigate to "DealerLogin" -->
+	<definition name="DealerLogin" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerLogin.jsp" />
+	</definition>
+	
+	<!-- <definition name="DealerList" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerList.jsp" />
+	</definition> -->
+	
+	<definition name="CylinderRegister" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CylinderRegister.jsp" />
+	</definition>
+	
+	<definition name="CylinderDamage" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CylinderDamage.jsp" />
+	</definition>
+	
+	<definition name="CylinderList" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CylinderList.jsp" />
+	</definition>
+	
+	<definition name="CylinderReturn" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CylinderReturn.jsp" />
+	</definition>
+	<!-- To navigate to "CylinderBuy" -->
+	<definition name="CylinderBuy" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CylinderBuy.jsp" />
+	</definition>
+	
+	<definition name="CylinderFind" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CylinderFind.jsp" />
+	</definition>
+	
+	<definition name="GenerateBill" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/GenerateBill.jsp" />
+	</definition>
+	<definition name="GenerateECR" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/GenerateECR.jsp" />
+	</definition>
+	
+	<definition name="DealerCylinderOutstanding" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerCylinderOutstanding.jsp" />
+	</definition>
+	
+	<definition name="DealerInvoiceOutstanding" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerInvoiceOutstanding.jsp" />
+	</definition>
+	<definition name="DealerCylinderBuy" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerCylinderBuy.jsp" />
+	</definition>
+	<definition name="PreviewBill" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/PreviewBill.jsp" />
+	</definition>
+	
+	<definition name="PreviewBillDetails" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/PreviewBillDetails.jsp" />
+	</definition>
+	<definition name="PreviewDealerBillDetails" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/PreviewDealerBillDetails.jsp" />
+	</definition>
+	
+	<definition name="CylinderCorrection" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CylinderCorrection.jsp" />
+	</definition>
+	<definition name="LorryCorrection" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/LorryCorrection.jsp" />
+	</definition>
+	<definition name="ReprintInvoice" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/ReprintInvoice.jsp" />
+	</definition>
+	<definition name="CurrentMonthSale" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/CurrentMonthSale.jsp" />
+	</definition>
+	
+	<definition name="DealerSales" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerSales.jsp" />
+	</definition>
+	<definition name="DealerSalesDisp" extends="AdminLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/DealerSalesDisp.jsp" />
+	</definition>
+</tiles-definitions>
